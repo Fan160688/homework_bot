@@ -1,0 +1,175 @@
+2022-07-02 22:38:46,406, ERROR, —бой в работе программы: 'dict' object has no attribute 'json'
+2022-07-02 22:48:12,144, ERROR, —бой в работе программы: 'dict' object has no attribute 'json'
+2022-07-02 23:10:09,221, ERROR, —бой в работе программы: 'NoneType' object has no attribute 'json'
+2022-07-02 23:10:22,036, ERROR, —бой в работе программы: 'NoneType' object has no attribute 'json'
+2022-07-02 23:13:25,808, ERROR, —бой в работе программы: 'dict' object has no attribute 'json'
+2022-07-02 23:14:46,959, ERROR, —бой в работе программы: 'dict' object has no attribute 'json'
+2022-07-02 23:35:36,442, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+2022-07-03 11:25:39,147, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:28:46,505, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], dict):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:34:01,995, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:34:18,339, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:36:09,521, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:41:32,024, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:47:05,402, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:49:09,591, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 119, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:53:15,977, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:57:33,457, ERROR, —бой в работе программы: Ќеверный тип данных
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 65, in check_response
+    raise TypeError('Ќеверный тип данных')
+TypeError: Ќеверный тип данных
+2022-07-03 11:58:21,658, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 11:59:07,063, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:07:03,324, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:17:03,952, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:18:10,756, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:41:27,731, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:43:32,475, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 123, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:45:09,871, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:46:21,921, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 12:56:22,487, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homework = homeworks[0]
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 13:06:22,939, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homework = homeworks[0]
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 13:16:23,352, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 124, in main
+    homework = homeworks[0]
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 13:24:30,103, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
+2022-07-03 13:34:31,384, ERROR, —бой в работе программы: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:/Dev/homework_bot/homework.py", line 122, in main
+    homeworks = check_response(response)
+  File "d:/Dev/homework_bot/homework.py", line 64, in check_response
+    if not isinstance(response['homeworks'], list):
+TypeError: 'NoneType' object is not subscriptable
