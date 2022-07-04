@@ -32,7 +32,7 @@ def send_message(bot, message):
 
 
 def get_api_answer(current_timestamp):
-    """делает запрос к единственному эндпоинту API-сервиса"""
+    """делает запрос к единственному эндпоинту API-сервиса."""
     params = {'from_date': current_timestamp}
     try:
         response = requests.get(ENDPOINT, headers=HEADERS, params=params)
@@ -60,7 +60,7 @@ def check_response(response):
 
 
 def parse_status(homework):
-    """Извлекает статус работы"""
+    """Извлекает статус работы."""
     if 'homework_name' not in homework:
         raise KeyError('Нет ключа homework_name')
     if homework['status'] not in HOMEWORK_STATUSES:
@@ -72,7 +72,7 @@ def parse_status(homework):
 
 
 def check_tokens():
-    """Проверяет доступность переменных окружения"""
+    """Проверяет доступность переменных окружения."""
     if not PRACTICUM_TOKEN or not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         return False
     else:
