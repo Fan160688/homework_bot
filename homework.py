@@ -19,7 +19,6 @@ RETRY_TIME = 600
 ENDPOINT = 'https://practicum.yandex.ru/api/user_api/homework_statuses/'
 HEADERS = {'Authorization': f'OAuth {PRACTICUM_TOKEN}'}
 
-
 HOMEWORK_STATUSES = {
     'approved': 'Работа проверена: ревьюеру всё понравилось. Ура!',
     'reviewing': 'Работа взята на проверку ревьюером.',
@@ -28,7 +27,11 @@ HOMEWORK_STATUSES = {
 
 def send_message(bot, message):
     """Отправляет сообщение в Telegram чат."""
-    bot.send_message(TELEGRAM_CHAT_ID, message)
+    try:
+        bot.send_message(TELEGRAM_CHAT_ID, message)
+        logging.info(f'Сообщение: {message} отправлено в чат. ')
+    except Exception:
+        logging.error('Ошибка отправки сообщения в телеграм')
 
 
 def get_api_answer(current_timestamp):
@@ -36,6 +39,7 @@ def get_api_answer(current_timestamp):
     params = {'from_date': current_timestamp}
     try:
         response = requests.get(ENDPOINT, headers=HEADERS, params=params)
+        logging.info('Старт запроса к эндотипу API-сервиса')
     except Exception as error:
         logging.error(f'Сервер вернул ошибку: {error}')
         raise Exception(f'Сервер вернул ошибку: {error}')
@@ -44,7 +48,9 @@ def get_api_answer(current_timestamp):
         logging.error(f'Ошибка {status_code}')
         raise Exception(f'Ошибка {status_code}')
     try:
-        return response.json()
+        get_api = response.json()
+        logging.info('Выполнение запроса к эндотипу API-сервиса')
+        return get_api
     except ValueError:
         raise ValueError('Ошибка парсинга ответа из формата json')
 
