@@ -28,6 +28,7 @@ HOMEWORK_STATUSES = {
 def send_message(bot, message):
     """Отправляет сообщение в Telegram чат."""
     try:
+        logging.info('Старт отправки сообщения в чат')
         bot.send_message(TELEGRAM_CHAT_ID, message)
         logging.info(f'Сообщение: {message} отправлено в чат. ')
     except Exception:
@@ -38,8 +39,8 @@ def get_api_answer(current_timestamp):
     """делает запрос к единственному эндпоинту API-сервиса."""
     params = {'from_date': current_timestamp}
     try:
-        response = requests.get(ENDPOINT, headers=HEADERS, params=params)
         logging.info('Старт запроса к эндотипу API-сервиса')
+        response = requests.get(ENDPOINT, headers=HEADERS, params=params)
     except Exception as error:
         logging.error(f'Сервер вернул ошибку: {error}')
         raise Exception(f'Сервер вернул ошибку: {error}')
