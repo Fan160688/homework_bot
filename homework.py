@@ -95,6 +95,7 @@ def main():
     logger.setLevel(logging.DEBUG)
     handler = logging.StreamHandler(stream=sys.stdout)
     logger.addHandler(handler)
+    prev_status = ''
 
     while True:
         try:
@@ -102,7 +103,10 @@ def main():
             homeworks = check_response(response)
             if homeworks:
                 homework = homeworks[0]
-                send_message(bot, (parse_status(homework)))
+                status = parse_status(homework)
+                if status != prev_status:
+                    send_message(bot, (parse_status(homework)))
+                    prev_status = status
             else:
                 logging.info('Работы отсутствуют')
         except Exception as error:
